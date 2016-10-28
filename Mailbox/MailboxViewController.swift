@@ -16,11 +16,15 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     
     
+    @IBAction func didSwipeLeft(_ sender: UIPanGestureRecognizer) {
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = imageView.frame.size
+        scrollView.contentSize = CGSize(width: 320, height: 1000)
         scrollView.delegate = self
         
     }
