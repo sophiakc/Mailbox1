@@ -11,16 +11,17 @@ import UIKit
 class MailboxViewController: UIViewController, UIScrollViewDelegate {
 
     
-    
+    // Outlets
     @IBOutlet var imageView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var singleMessageView: UIView!
     
-    @IBAction func didSwipeLeft(_ sender: UIPanGestureRecognizer) {
-    }
+    // Global variables
+    var originalCenter: CGPoint!
+    var scrollViewOffset: CGFloat!
     
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,8 +30,50 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    }
 
+    // Create action for pan gesture recognizer
+    @IBAction func panMessage(_ sender: UIPanGestureRecognizer) {
+        
+        var location = sender.location(in: view)
+        var velocity = sender.velocity(in: view)
+        var translation = sender.translation(in: view)
+        
+        print ("working")
+        
+        if sender.state == .began {
+            
+            originalCenter = singleMessageView.center
+            
+        } else if sender.state == .changed {
+            
+            singleMessageView.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
+            
+            if translation.x > 0 && translation.x < 60 {
+                // show grey from right
+                print ("grey")
+                
+            } else if translation.x >= 60 && translation.x < 260 {
+                // show green
+                print ("green")
+                
+            } else if translation.x >= 260 {
+                // show red
+                print ("red")
+                
+            }
+        } else if sender.state == .ended {
+            
+        }
+    }
+    
+    
+    
+    
    
 }
+
+
+
+
+
+

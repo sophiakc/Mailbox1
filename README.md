@@ -1,14 +1,13 @@
 # W3 Project: *Mailbox*
 
 [Project Instructions](http://courses.codepath.com/courses/ios_for_designers/unit/3#!assignment)
+[Assets](https://www.dropbox.com/s/t2lw791unh67wel/Mailbox%20Assets.zip)
 
 **Mailbox** has been programmatically animated with Swift (iOS).
 
 Purpose of this project: leverage animations and gestures to implement more sophisticated interactions. We're going to use the techniques from this week to implement the Mailbox interactions.
 
-[Assets](https://www.dropbox.com/s/t2lw791unh67wel/Mailbox%20Assets.zip)
-
-Submitted by: [**Sophia Kecir Camper**](http://www.sophiakc.com)
+Submitted by: [*Sophia Kecir Camper*](http://www.sophiakc.com)
 
 Total time spent: **** cumulated hours
 

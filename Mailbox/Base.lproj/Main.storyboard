@@ -18,52 +18,57 @@
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" id="Y0L-gg-2dw" userLabel="search bar">
-                                        <rect key="frame" x="0.0" y="110" width="320" height="29"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="KOU-cn-khv" userLabel="RescheduleView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed" id="NMk-Z0-l9x" userLabel="feed of messages">
-                                        <rect key="frame" x="0.0" y="673" width="320" height="319"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="reschedule" id="O8S-1Q-eF7">
+                                                <frame key="frameInset" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="LiA-Nr-8Gn" userLabel="MenuView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help_label" id="gYB-y1-ff9">
-                                        <rect key="frame" x="0.0" y="60" width="320" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" misplaced="YES" id="LYL-KX-4K3">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="menu" id="lJe-kS-cx7">
+                                                <frame key="frameInset" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="LYL-KX-4K3" userLabel="SingleMessageView">
                                         <rect key="frame" x="0.0" y="138" width="320" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="bJC-Sr-4X1" userLabel="left delete">
-                                                <frame key="frameInset" minY="8" width="320" height="83"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="0.23137254901960785" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="bK9-aG-zpS" userLabel="right list view">
-                                                <frame key="frameInset" minY="8" width="320" height="83"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.88235294117647056" green="0.6470588235294118" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Kf4-Cm-E7S" userLabel="left mark as read">
-                                                <frame key="frameInset" minY="8" width="320" height="87"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.14117647058823529" green="0.8901960784313725" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="9ZN-96-734" userLabel="right reschedule">
-                                                <frame key="frameInset" minY="8" width="320" height="87"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="0.83921568627450982" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="message" id="oDs-vc-nPF" userLabel="single message">
-                                                <frame key="frameInset" minY="8" width="320" height="85"/>
+                                                <frame key="frameInset" minY="8" width="320" height="86"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="Xpa-j0-ZnC" appends="YES" id="1NB-rk-yxO"/>
+                                                    <outletCollection property="gestureRecognizers" destination="fvW-kh-EYG" appends="YES" id="oc4-Nc-Hpu"/>
                                                 </connections>
                                             </imageView>
                                         </subviews>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="feed" id="NMk-Z0-l9x" userLabel="feed of messages">
+                                        <rect key="frame" x="0.0" y="672" width="320" height="319"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="search" id="Y0L-gg-2dw" userLabel="search bar">
+                                        <rect key="frame" x="0.0" y="111" width="320" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="help_label" id="gYB-y1-ff9">
+                                        <rect key="frame" x="0.0" y="61" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nav" id="6Sx-Pc-8Zj">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -72,12 +77,13 @@
                     <connections>
                         <outlet property="imageView" destination="R88-LO-3fg" id="tPk-v6-JnG"/>
                         <outlet property="scrollView" destination="chJ-Se-kot" id="Gex-OL-eML"/>
+                        <outlet property="singleMessageView" destination="LYL-KX-4K3" id="rbJ-XX-8pk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loR-9v-5b5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Xpa-j0-ZnC">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="fvW-kh-EYG">
                     <connections>
-                        <action selector="didSwipeLeft:" destination="p7T-py-qms" id="9ll-7P-20H"/>
+                        <action selector="panMessage:" destination="p7T-py-qms" id="lN7-Ra-wWi"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
@@ -87,7 +93,10 @@
     <resources>
         <image name="feed" width="320" height="1202"/>
         <image name="help_label" width="320" height="37"/>
+        <image name="menu" width="320" height="568"/>
         <image name="message" width="320" height="86"/>
+        <image name="nav" width="320" height="65"/>
+        <image name="reschedule" width="320" height="568"/>
         <image name="search" width="320" height="42"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
