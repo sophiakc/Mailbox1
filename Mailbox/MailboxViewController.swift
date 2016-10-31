@@ -12,6 +12,7 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
 
     
     // Outlets
+    @IBOutlet var mailView: UIView!
     @IBOutlet var imageView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -24,7 +25,7 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         scrollView.contentSize = CGSize(width: 320, height: 1000)
         scrollView.delegate = self
         

@@ -10,7 +10,7 @@
         <scene sceneID="8C2-LH-4tS">
             <objects>
                 <viewController id="p7T-py-qms" customClass="MailboxViewController" customModule="Mailbox" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="R88-LO-3fg">
+                    <view key="view" contentMode="scaleToFill" id="R88-LO-3fg" userLabel="MailView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -69,13 +69,23 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hv9-Ec-vFM" userLabel="Write email">
+                                        <rect key="frame" x="254" y="19" width="66" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JkF-Oj-YbA" userLabel="Menu">
+                                        <rect key="frame" x="0.0" y="19" width="66" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
-                        <outlet property="imageView" destination="R88-LO-3fg" id="tPk-v6-JnG"/>
+                        <outlet property="mailView" destination="R88-LO-3fg" id="5kD-4a-4yv"/>
                         <outlet property="scrollView" destination="chJ-Se-kot" id="Gex-OL-eML"/>
                         <outlet property="singleMessageView" destination="LYL-KX-4K3" id="rbJ-XX-8pk"/>
                     </connections>
@@ -87,7 +97,28 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="465" y="154"/>
+            <point key="canvasLocation" x="997" y="154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0y6-3r-XjT">
+            <objects>
+                <viewController id="YyI-ZM-9FZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzm-mt-N8k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="menu" id="Frm-cA-lSg">
+                                <frame key="frameInset" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yVi-yD-mTJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tr-2H-VEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1523" y="637"/>
         </scene>
     </scenes>
     <resources>
